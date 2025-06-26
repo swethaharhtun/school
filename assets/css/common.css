@@ -1,0 +1,14 @@
+@import url(https://db.onlinewebfonts.com/c/7c7b079cf59c70d55d0b33eae89f1f38?family=Tazugane+Gothic+HondaMKTA+Med);
+@import url('https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --white : #ffffff;
+    --black : #000000;
+    --blue : #2d4a95;
+    --turquoise : #4cdbac;
+    --vidvid_azure : #18cde5;
+    --vidvid_red : #f62723;
+    --peach : #ffbd59;
+    --japanese_font : 'Tazugane Gothic HondaMKTA Med', sans-serif;
+    --english_font : 'Saira Condensed', sans-serif;
+}
