@@ -7,7 +7,6 @@
 }
 
 html, body {
-  height: 100%;
   font-family: sans-serif;
   background-color: #fff;
   color: #000;
@@ -18,7 +17,7 @@ html, body {
 
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
