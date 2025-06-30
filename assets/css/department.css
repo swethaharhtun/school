@@ -1,0 +1,174 @@
+body {
+    background-color: white;
+}
+
+/* .container {
+    display: flex;
+
+    padding: 30px;
+} */
+
+.header-img{
+    width: 100%;
+}
+.number,
+.faculty {
+    color: turquoise;
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.gaku-text {
+    text-align: left;
+    padding: 10px;
+    text-align: center;
+}
+
+.section1 {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.right-text {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.number {
+    font-weight: bold;
+}
+
+.label {
+    font-size: 14px;
+    color: blue;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    font-size: 18px;
+    height: 200px;
+}
+
+.left {
+
+    text-align: left;
+    justify-content: space-between;
+}
+
+.right {
+
+    text-align: right;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.container-left {
+    width: fit-content;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+.row-left {
+    font-size: 0;
+}
+
+.figure-box {
+    display: inline-block;
+    width: 180px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 14px;
+    margin: 0;
+    padding: 10px;
+    vertical-align: top;
+    background-color: grey;
+}
+
+.figure-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.figure-box a {
+    display: block;
+    margin-bottom: 5px;
+    color: blue;
+    text-decoration: underline;
+}
+
+.figure-box p {
+    margin: 0;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.first-div-test {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: white;
+    padding: 20px 55px;
+}
+
+.second-div-test {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+ .row{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .card{
+            width: 320px;
+            display: flex;
+            gap: 30px;
+            padding: 10px;
+            position: relative;
+        }
+
+        .card-button{
+            color: var(--white);
+            position: absolute;
+            top: 30px;
+            right: 5px;
+            font-size: 6px;
+            padding: 2px;
+            border-radius: 5px;
+            background-color: var(--turquoise);
+        }
+
+        .card-img{
+            width: 100%;
+        }
