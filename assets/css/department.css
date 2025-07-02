@@ -1,33 +1,14 @@
 body {
-    background-color: white;
+    background-color: var(--white);
 }
 
-/* .container {
-    display: flex;
-
-    padding: 30px;
-} */
-
-.header-img{
+.header-img {
     width: 100%;
 }
+
 .number,
 .faculty {
-    color: turquoise;
-    text-align: center;
-}
-
-.left-text {
-    text-align: left;
-    background-color: blue;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-
-.gaku-text {
-    text-align: left;
-    padding: 10px;
+    color: var(--turquoise);   
     text-align: center;
 }
 
@@ -47,128 +28,185 @@ body {
     text-align: center;
 }
 
-.number {
-    font-weight: bold;
-}
-
 .label {
     font-size: 14px;
-    color: blue;
+    color: var(--blue);
 }
 
 .vertical-text {
     writing-mode: vertical-rl;
     font-size: 18px;
     height: 200px;
-}
-
-.left {
-
-    text-align: left;
-    justify-content: space-between;
-}
-
-.right {
-
-    text-align: right;
-    justify-content: space-between;
+    color: var(--blue);
+    justify-content: center;
 }
 
 .row {
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-}
-
-.container-left {
-    width: fit-content;
-    font-family: sans-serif;
-    margin: 0 auto;
-}
-
-.row-left {
-    font-size: 0;
-}
-
-.figure-box {
-    display: inline-block;
-    width: 180px;
-    border: 1px solid #333;
-    box-sizing: border-box;
-    text-align: center;
-    font-size: 14px;
+    justify-content: center;
+    margin-bottom: 0;
     margin: 0;
-    padding: 10px;
-    vertical-align: top;
-    background-color: grey;
+    padding: 0;
+    gap: 0;
+    padding: 0.5px 0.5px;
 }
 
-.figure-box img {
+.card-title-text {
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(to right, #2d4a95, #0b9dd5) 1;
+     color: var(--blue);
+    font-weight: 700;
+    gap: 3px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    width: 320px;
+    display: flex;
+    gap: 50px;
+    padding: 100px;
+    position: relative;
+    padding: 0;
+}
+
+.card-button {
+    color: var(--white);
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    font-size: 6px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: var(--turquoise);
+}
+
+.card-img {
     width: 100%;
-    height: auto;
-    display: block;
-    margin-bottom: 5px;
 }
 
-.figure-box a {
-    display: block;
-    margin-bottom: 5px;
-    color: blue;
-    text-decoration: underline;
+.center-text {
+    text-align: center;
+    font-family: sans-serif;
 }
 
-.figure-box p {
-    margin: 0;
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    align-items: center;
 }
 
-.circle {
+.highlight-text {
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.gif-container {
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.gif-left,
+.gif-right {
+    position: absolute;
+    width: 500px;
+    bottom: 0;
+}
+
+.gif-left {
+    left: 0;
+}
+
+.gif-right {
+    right: 0;
+}
+
+.small-figure {
+    transform: scale(0.1);
+    transform-origin: center;
+}
+
+.table {
+    display: table;
+    border-collapse: collapse;
+    background-color: rgb(177, 198, 226);
+}
+
+.row-table {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border: 2px solid #999;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.row:nth-child(4) .cell:nth-child(6) {
+    background-color:var(--yellow);   
+    font-weight: bold;
+}
+
+.card12 {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    margin: 50px auto;
 }
 
-.first-div-test {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-color: white;
-    padding: 20px 55px;
+.card11 {
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    margin: 50px auto;
 }
 
-.second-div-test {
-    width: 100%;
-    height: 100%;
-    background-color: white;
+.card13 {
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(100% 0, 100% 90%, 49% 75%, 0 87%, 0 0);
+    margin: 50px auto;
 }
- .row{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 50px;
-        }
 
-        .card{
-            width: 320px;
-            display: flex;
-            gap: 30px;
-            padding: 10px;
-            position: relative;
-        }
+.card17 {
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(47% 0, 100% 19%, 100% 71%, 55% 84%, 0 71%, 0 19%);
+    margin: 50px auto;
+}
 
-        .card-button{
-            color: var(--white);
-            position: absolute;
-            top: 30px;
-            right: 5px;
-            font-size: 6px;
-            padding: 2px;
-            border-radius: 5px;
-            background-color: var(--turquoise);
-        }
+.card15 {
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(50% 0%,90% 35%,65% 35%,65% 100%,35% 100%,35% 35%,10% 35%);
+    margin: 50px auto;
+}
+.card-content
+{
+    font-weight: bold;
+    font-size: 10px;
+}
+.learn
+{
+    font-size: 70px;
+}
+.right
+{
+    text-align: right;
+}
 
-        .card-img{
-            width: 100%;
-        }
