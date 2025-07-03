@@ -1,5 +1,5 @@
 body {
-    background-color: var(--white);
+    background-color: var(--grey);
 }
 
 .header-img {
@@ -135,8 +135,9 @@ body {
 }
 
 .small-figure {
-    transform: scale(0.1);
-    transform-origin: center;
+   transform: scale(0.1);
+    float: left;           /* ← move to left side */
+    margin-right: 1em;     /* optional spacing */
 }
 
 .table {
@@ -186,7 +187,7 @@ body {
 .card17 {
     width: 150px;
     height: 150px;
-    clip-path: polygon(47% 0, 100% 19%, 100% 71%, 55% 84%, 0 71%, 0 19%);
+   clip-path: polygon(25% 100%, 26% 41%, 0 42%, 48% 0, 100% 40%, 70% 43%, 73% 100%);
     margin: 50px auto;
 }
 
@@ -209,4 +210,121 @@ body {
 {
     text-align: right;
 }
+
+.section1-font{
+    font-size: 85px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(76, 219, 172);
+    font-kerning: none;
+    text-decoration: none;
+}
+
+.figures {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  font-family: sans-serif;
+}
+
+.figure {
+  text-align: center;
+  max-width: 180px; /* optional */
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 0.4em;
+  white-space: nowrap;
+}
+.rectangle1 {
+  width: 150px;
+  height: 90px;
+ background-color: rgb(96, 96, 238);
+  padding: 1em;             /* space inside the box */
+  box-sizing: border-box;
+  text-align: left;
+}
+.rectangle2 {
+  width: 330px;
+  height: 170px;
+ background-color: rgb(253, 137, 224);
+  padding: 1em;             /* space inside the box */
+  box-sizing: border-box;
+  text-align: left;
+}
+.paragraph1
+{
+    font-size: 1em;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(255, 255, 255);
+    font-kerning: none;
+    text-decoration: none;
+    text-align: left;
+}
+.paragraph2
+{
+    font-size: 1em;
+    font-weight: 400;
+    font-style: 0.5 em;
+    color: rgb(255, 255, 255);
+    font-kerning: none;
+    text-decoration: none;
+}
+.paragraph3
+{
+    font-size: 1em;
+    font-weight: 400;
+    font-style: 0.5 em;
+    font-family: var(--japanese_font);
+    color : var(--blue);
+    text-align: left;
+}
+.title
+{
+    font-size: 1em;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(76, 219, 172);
+    font-kerning: none;
+    text-decoration: none;
+    text-align: left;
+}
+
+.first-div-text {
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 25px;
+
+}
+
+.second-div-text {
+    width: 100%;
+    height: 25%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.view-more {
+  text-align: center;
+  font-family: sans-serif;
+  color: #007acc;
+  cursor: pointer;
+  display: inline-block;
+  margin: 1em;
+}
+
+.view-more .arrow {
+  display: block;
+  margin-top: 0.2em;
+  font-size: 1.5em;
+}
+
+
+
+
 
