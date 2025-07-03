@@ -470,3 +470,90 @@ input[type="checkbox"] {
     text-decoration: underline;
 }
 
+
+@media(max-width: 1173px)
+{
+    .first-div{
+        padding: 20px 30px;
+    }
+}
+
+@media(max-width: 1023px)
+{
+    .first-div{
+        padding: 15px;
+    }
+}
+
+@media(max-width: 934px)
+{
+    .section-title{
+        font-size: 54.3px;
+    }
+
+    .section-subtitle{
+        font-size: 18.1px;
+    }
+
+    .card-section{
+        gap: 30px;
+    }
+
+    .card-title h3{
+        font-size: 12.3px;
+    }
+
+    .card-title h2, .watermark{
+        font-size: 16.4px;
+    }
+
+    .card-text{
+        font-size: 10.1px;
+    }
+}
+
+@media(max-width: 700px)
+{
+    .card-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 500px)
+{
+    .card{
+        height: 260px;
+    }
+}
+
+@media(max-width: 443px)
+{
+    .first-div {
+        padding: 10px;
+        padding-left:0px;
+    }
+
+    .card-section{
+        gap: 20px;
+    }
+
+    .card {
+        height: 220px;
+    }
+}
+
+@media(max-width: 400px){
+    .card-section{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .first-div {
+        padding: 30px;
+    }
+}
+
