@@ -1,5 +1,5 @@
 body {
-    background-color: var(--grey);
+    background-color: var(--white);
 }
 
 .header-img {
@@ -8,7 +8,7 @@ body {
 
 .number,
 .faculty {
-    color: var(--turquoise);   
+    color: var(--turquoise);
     text-align: center;
 }
 
@@ -56,7 +56,7 @@ body {
     align-items: flex-end;
     border-bottom: 3px solid;
     border-image: linear-gradient(to right, #2d4a95, #0b9dd5) 1;
-     color: var(--blue);
+    color: var(--blue);
     font-weight: 700;
     gap: 3px;
 }
@@ -114,30 +114,26 @@ body {
 }
 
 .gif-container {
-    position: relative;
     width: 100%;
-    height: 300px;
+    position: relative;
 }
 
-.gif-left,
+.gif-left{
+    position: absolute;
+    width: 500px;
+    bottom: -1100px;
+    left :100px;
+}
 .gif-right {
     position: absolute;
     width: 500px;
-    bottom: 0;
-}
-
-.gif-left {
-    left: 0;
-}
-
-.gif-right {
-    right: 0;
+    bottom: -1190px;
 }
 
 .small-figure {
-   transform: scale(0.1);
-    float: left;           /* ← move to left side */
-    margin-right: 1em;     /* optional spacing */
+    transform: scale(0.1);
+    float: left;
+    margin-right: 1em;
 }
 
 .table {
@@ -151,15 +147,20 @@ body {
 }
 
 .cell {
-    display: table-cell;
-    border: 2px solid #999;
-    padding: 10px;
-    text-align: center;
+  display: table-cell;
+  border: 2px solid #999;
+  text-align: center;
+  vertical-align: middle;
+  width: 300px;
+  height: 100px;
+  font-family: sans-serif;
+  font-size: 18px;
+  white-space: nowrap;
 }
 
 
 .row:nth-child(4) .cell:nth-child(6) {
-    background-color:var(--yellow);   
+    background-color: var(--yellow);
     font-weight: bold;
 }
 
@@ -187,31 +188,31 @@ body {
 .card17 {
     width: 150px;
     height: 150px;
-   clip-path: polygon(25% 100%, 26% 41%, 0 42%, 48% 0, 100% 40%, 70% 43%, 73% 100%);
+    clip-path: polygon(25% 100%, 26% 41%, 0 42%, 48% 0, 100% 40%, 70% 43%, 73% 100%);
     margin: 50px auto;
 }
 
 .card15 {
     width: 150px;
     height: 150px;
-    clip-path: polygon(50% 0%,90% 35%,65% 35%,65% 100%,35% 100%,35% 35%,10% 35%);
+    clip-path: polygon(50% 0%, 90% 35%, 65% 35%, 65% 100%, 35% 100%, 35% 35%, 10% 35%);
     margin: 50px auto;
 }
-.card-content
-{
+
+.card-content {
     font-weight: bold;
     font-size: 10px;
 }
-.learn
-{
+
+.learn {
     font-size: 70px;
 }
-.right
-{
+
+.right {
     text-align: right;
 }
 
-.section1-font{
+.section1-font {
     font-size: 85px;
     font-weight: 700;
     font-style: normal;
@@ -223,66 +224,58 @@ body {
 .figures {
   display: flex;
   justify-content: center;
-  gap: 3em;
+  gap: 10em;
   font-family: sans-serif;
 }
 
 .figure {
-  text-align: center;
-  max-width: 180px; /* optional */
+    text-align: center;
+    max-width: 180px;
 }
 
 .label {
-  font-weight: bold;
-  margin-bottom: 0.4em;
-  white-space: nowrap;
+    font-weight: bold;
+    margin-bottom: 0.4em;
+    white-space: nowrap;
 }
-.rectangle1 {
-  width: 150px;
-  height: 90px;
- background-color: rgb(96, 96, 238);
-  padding: 1em;             /* space inside the box */
-  box-sizing: border-box;
-  text-align: left;
-}
-.rectangle2 {
-  width: 330px;
-  height: 170px;
- background-color: rgb(253, 137, 224);
-  padding: 1em;             /* space inside the box */
-  box-sizing: border-box;
-  text-align: left;
-}
-.paragraph1
-{
+
+.paragraph1 {
+    position: absolute;
+    bottom: 0; /* ← This puts it at the bottom */
+    width: 100%;
+    text-align: center;
     font-size: 1em;
     font-weight: 700;
     font-style: normal;
     color: rgb(255, 255, 255);
     font-kerning: none;
     text-decoration: none;
-    text-align: left;
 }
-.paragraph2
-{
-    font-size: 1em;
-    font-weight: 400;
-    font-style: 0.5 em;
+
+
+.paragraph2 {
+    position: absolute;
+    bottom: 0; /* ← This puts it at the bottom */
+    width: 100%;
+    text-align: center;
+    font-size: 10;
+    font-weight: 700;
+    font-style: normal;
     color: rgb(255, 255, 255);
     font-kerning: none;
     text-decoration: none;
 }
-.paragraph3
-{
+
+.paragraph3 {
     font-size: 1em;
     font-weight: 400;
     font-style: 0.5 em;
     font-family: var(--japanese_font);
-    color : var(--blue);
+    color: var(--blue);
     text-align: left;
 }
-.title
-{
+
+.title {
     font-size: 1em;
     font-weight: 700;
     font-style: normal;
@@ -310,21 +303,90 @@ body {
 }
 
 .view-more {
-  text-align: center;
-  font-family: sans-serif;
-  color: #007acc;
-  cursor: pointer;
-  display: inline-block;
-  margin: 1em;
+    text-align: center;
+    font-family: sans-serif;
+    color: #007acc;
+    cursor: pointer;
+    display: inline-block;
+    margin: 1em;
 }
 
 .view-more .arrow {
-  display: block;
-  margin-top: 0.2em;
-  font-size: 1.5em;
+    display: block;
+    margin-top: 0.2em;
+    font-size: 1.5em;
 }
 
+.figure-container {
+    width: 300px;
+    position: relative;
+    margin: 20px auto;
+}
 
+.figure-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+.overlay-left-text {
+position: absolute;
+top: -20px;
+left: -15px;
+right: 20px;
+width: 150px;        
+height: 100px;       
+color: white;
+background-color: rgba(29, 8, 224, 0.6);
+border-radius: 1px;
+font-size: 16px;
+text-align: left;
+}
 
+.overlay-right-text {
+    position: absolute;
+    bottom: 3px;
+    left: 20px;
+    right: 20px;
+    color: white;
+    width: 300px;        
+    height: 120px; 
+    background-color: rgba(29, 8, 224, 0.6);
+    border-radius: 1px;
+    font-size: 16px;
+    text-align: left;
+}
 
+.gif-container-text {
+    display: flex;
+}
+.gif{
+    opacity: 0.1;
+}
+.figure-size
+{
+   opacity: 1;
+      width: 300px;   
+      height: 500px;  
+      background-color: #e0e0e0;
+      margin: 10px;
+      text-align: center;
+}
+.figure-size img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .section06-color
+    {
+        color: turquoise;
+        font-weight: bold;
+    }
+    .section07-color
+    {
+        color: white;
+        font-weight: bold;
+    }
+    .section07-rectangle
+    {
+        background-color: black;
+    }
