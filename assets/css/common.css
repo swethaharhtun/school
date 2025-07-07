@@ -30,6 +30,10 @@
     margin-bottom: 88px !important;
 }
 
+.p-b-80{
+    padding-bottom: 80px !important;
+}
+
 .container{
     width: 100%;
     max-width: 1200px;
@@ -414,3 +418,142 @@ input[type="checkbox"] {
     color: var(--blue);
     text-align: center;
 }
+
+.new{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--blue);
+    padding-bottom: 10px;
+    margin-bottom:10px ;
+}
+
+.new-status{
+    padding: 0 20px;
+    border: 1px solid var(--blue);
+}
+
+.news .card-btn{
+    width: 16%;
+    margin: auto;
+}
+
+.qna-lists{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.qna{
+    background-color: var(--white);
+    padding: 20px;
+}
+
+.qna .top, .qna .bottom{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.qna-card-txt{
+    font-weight: bold;
+    font-size: 23px;
+    color: var(--white);
+    padding: 2px 10px;
+    background-color: var(--blue);
+}
+
+.qna a{
+    text-decoration: underline;
+}
+
+
+@media(max-width: 1173px)
+{
+    .first-div{
+        padding: 20px 30px;
+    }
+}
+
+@media(max-width: 1023px)
+{
+    .first-div{
+        padding: 15px;
+    }
+}
+
+@media(max-width: 934px)
+{
+    .section-title{
+        font-size: 54.3px;
+    }
+
+    .section-subtitle{
+        font-size: 18.1px;
+    }
+
+    .card-section{
+        gap: 30px;
+    }
+
+    .card-title h3{
+        font-size: 12.3px;
+    }
+
+    .card-title h2, .watermark{
+        font-size: 16.4px;
+    }
+
+    .card-text{
+        font-size: 10.1px;
+    }
+}
+
+@media(max-width: 700px)
+{
+    .card-section{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 500px)
+{
+    .card{
+        height: 260px;
+    }
+}
+
+@media(max-width: 443px)
+{
+    .first-div {
+        padding: 10px;
+        padding-left:0px;
+    }
+
+    .card-section{
+        gap: 20px;
+    }
+
+    .card {
+        height: 220px;
+    }
+}
+
+@media(max-width: 400px){
+    .card-section{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .card {
+        height: 300px;
+    }
+
+    .first-div {
+        padding: 30px;
+    }
+}
+
