@@ -2,6 +2,13 @@ body {
     background-color: var(--white);
 }
 
+/* Hide card button on mobile */
+@media (max-width: 767px) {
+    .card-button {
+        display: none !important;
+    }
+}
+
 .header-img {
     width: 100%;
 }
@@ -605,4 +612,53 @@ text-align: left;
 .program-visual-showcase img {
     max-width: 100%;
     height: auto;
+}
+
+/* Header image responsive visibility */
+.header-web {
+  display: block;
+}
+.header-mobile {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .header-web {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
+}
+@media (max-width: 1024px) {
+  .highlight-text {
+    margin-left: -22px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 1024px) {
+  .section1-font {
+    font-size: 60px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .section1 .row {
+    margin-top: -103px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .section-subtitle.learn {
+    margin-left: 9px;
+    margin-top: 8px;
+    font-size: 55px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .section2.container {
+    margin-top: -147px !important;
+  }
+}
+@media (max-width: 767px) {
+  .card-left-title {
+    display: none !important;
+  }
 }
