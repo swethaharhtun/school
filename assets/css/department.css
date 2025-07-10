@@ -1,5 +1,8 @@
 body {
     background-color: var(--white);
+    margin: 0;
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 /* Hide card button on mobile */
@@ -150,10 +153,11 @@ body {
 }
 
 .gif-left{
-    position: absolute;
-    width: 500px;
-    bottom: -1100px;
-    left :100px;
+  position: absolute;
+  width: 1058px;
+  bottom: -488px;
+  left: -60px;
+  margin-left: 115px;
 }
 .gif-right {
     position: absolute;
