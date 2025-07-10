@@ -17,12 +17,21 @@ body {
     font-size: 15px;
     color: var(--blue);
 }
-
+.section2-department1
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+.section2-department2
+{
+    font-size: 20px;
+}
 .section1 {
     justify-content: center;
     align-items: center;
     height: 350px;
     text-align: center;
+    top : 100px;
 }
 .section5 {
     justify-content: center;
@@ -57,11 +66,13 @@ body {
     height: 200px;
     color: var(--blue);
     justify-content: center;
+    margin-top: 35px;
+   
 }
 
 .row {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-bottom: 0;
     margin: 0;
     padding: 0;
@@ -72,7 +83,7 @@ body {
 .card-title-text {
     display: flex;
     align-items: flex-end;
-    border-bottom: 3px solid;
+    border-bottom: 1.1px solid;
     border-image: linear-gradient(to right, #2d4a95, #0b9dd5) 1;
     color: var(--blue);
     font-weight: 700;
@@ -87,10 +98,11 @@ body {
 }
 
 .card-text {
-    width: 320px;
+    width: 450px;
     display: flex;
-    gap: 50px;
+    column-gap: 40px;
     padding: 100px;
+    margin-top: 40px;
     position: relative;
     padding: 0;
 }
@@ -99,11 +111,11 @@ body {
 .card-button {
     color: var(--white);
     position: absolute;
-    top: 30px;
+    top: 15px;
     right: 5px;
-    font-size: 6px;
+    font-size: 10px;
     padding: 2px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: var(--turquoise);
 }
 
@@ -165,11 +177,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, auto);
   gap: 0px;
-<<<<<<< HEAD
-  background-color: rgb(177, 198, 226);
-=======
   /* background-color: rgb(177, 198, 226); */
->>>>>>> cb631f215224a580a90a51398b124a5b596079dc
   padding: 0px;
   justify-content: center;  
   align-items: center; 
@@ -210,12 +218,13 @@ body {
 }
 
 .card-content {
-    font-weight: bold;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .learn {
-    font-size: 70px;
+    font-size: 80px;
+    color :var(--blue); 
+    margin-left: 100px;
 }
 
 .right {
