@@ -5,9 +5,119 @@ body {
   width: 100vw;
 }
 
-/* Hide card button on mobile */
+/* Search Button Styles */
+.search-button-container {
+  text-align: center;
+  margin: 20px 0 30px;
+}
+
+.search-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4FE2B2;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: none;
+  position: relative;
+}
+
+.search-button:hover {
+  background-color: #3dd1a2;
+  text-decoration: underline;
+}
+
+.search-button span {
+  margin-right: 8px;
+  text-decoration: underline;
+}
+
+/* Web Data Section */
+.web-data {
+  display: block;
+}
+
+/* Mobile Slider Styles */
+.mobile-slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding: 0 15px;
+  margin: 20px 0 40px;
+  display: none; /* Hide by default */
+}
+
+/* Show only on mobile */
 @media (max-width: 767px) {
+  .mobile-slider-container {
+    display: block;
+  }
+}
+
+.mobile-slider-track {
+  display: flex;
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.mobile-slide {
+  min-width: 100%;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.mobile-slider-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.mobile-slider-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mobile-slider-dots .dot.active {
+  background-color: #4FE2B2;
+}
+
+/* Arrow navigation has been removed as per request */
+
+/* Mobile styles */
+@media (max-width: 767px) {
+  .web-data {
+    display: none;
+  }
     .card-button {
+        display: none !important;
+    }
+    
+    /* Hide sections on mobile */
+    .section3,
+    .section4 {
+        display: none !important;
+    }
+    
+    /* Show mobileview section on mobile */
+    .mobileview {
+        display: block !important;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 768px) {
+    /* Hide mobileview section on desktop */
+    .mobileview {
         display: none !important;
     }
 }
